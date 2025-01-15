@@ -5,70 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naks Consulting Team</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c440d28c07.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/impala.webp" class="logo" >
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Contact</a></li>
+                <img src="images/horns.png" class="logo" >
+                <!-- <div class="company-name">ManakaTech</div> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Naks <span>Consultent</span> Team</h1>
-                <h4>we are here to make your business <br>technolgically accessable</h4>
+                <h1><span>ManakaTech</span> Company</h1>
+                <h4>A family that make your business technolgically <br>accessable And  put your vision <br>into reality </h4>
+                <a href="#" class="btn-btn3">Let us create your project</a>
             </div>
         </div>
     </div>
     <!-- About -->
-    <div id="About">
+    <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/holdinghand.jpg" alt="" >
+            <div class="column-1">
+                <div class="col-2">
+                    <div class="grouppic">
+                        <img src="images/teamwork.jpg" alt="">
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About us</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam deleniti laborum non reprehenderit saepe laudantium. Aspernatur accusamus possimus quisquam dolorem reiciendis? Similique quam rem dolores totam quisquam culpa adipisci labore!</p>
+                <div class="col-1">
+                    <h1>About Us</h1>
+                    <p>ManakaTech was founded in 2023 with one goal in mind: to provide the highest quality software solution to our customers. We specialize in building apps and websites, ensuring each client receives personalized attention and the best results.</p>
+                    <p>With the years that we have been operating we have made our customer so happy they come back</p>
                 </div>
+                
+                <!-- <div class="col-2">
+                    <h2>Meet Our Team</h2>
+                    <div class="team">
+                    <div class="team-member">
+                        <img src="images/mamatime.jpeg" alt="Team Member 1">
+                        <h3>Ofentje Mamatime Phala</h3>
+                        <p>Co-Founder & CEO & Web Developer</p>
+                        <p>Ofentje has passion and love for tech and studied computer science. She started the company with a commitment to excellence and customer satisfaction.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/terrence.jpeg" alt="Team Member 2">
+                        <h3>Terrence Tebatso Manaka</h3>
+                        <p>Co-Founder & Full-Stack Developer </p>
+                        <p>Terrence ensures that all projects are delivered on time and within budget, making sure every client has a seamless experience.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/prudence.jpeg" alt="Team Member 3">
+                        <h3>Prudence Kgetjepe</h3>
+                        <p>Business Analyst </p>
+                        <p>Pru ensures that communication between the team and clients is smooth, leaving our clients satisfied.</p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div> -->
             </div>
         </div>
+          <div class="cta">
+            <p>Interested in working with us? <a href="#contact">Contact us today!</a></p>
+          </div>
+        </div>
     </div>
+      
 <!-- Services -->
-<div id="Services">
+<div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">Services</h1>
         <div class="service-list">
             <div>
                 <h2>Websites</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quisquam vitae at architecto soluta error similique repellendus, qui tempore nihil unde minima ullam illum. Ipsum enim non impedit deserunt nobis?</p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
             </div>
             <div>
                 <h2>Apps</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quisquam vitae at architecto soluta error similique repellendus, qui tempore nihil unde minima ullam illum. Ipsum enim non impedit deserunt nobis?</p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
             </div>
             <div>
-                <h2>Web Design</h2>
+                <h2>Web-Design</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quisquam vitae at architecto soluta error similique repellendus, qui tempore nihil unde minima ullam illum. Ipsum enim non impedit deserunt nobis?</p>
-                <a href="#">learn more</a>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Cloud-services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quisquam vitae at architecto soluta error similique repellendus, qui tempore nihil unde minima ullam illum. Ipsum enim non impedit deserunt nobis?</p>
+                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
  </div>
+ 
  <!-- Our Work -->
   <div id="Work">
     <div class="container">
         <h1 class="sub-title">Our Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="" alt="">
+                <img src="images/soccer728*408.jpg" class="imag">
                 <div class="layer">
                     <h3>Soccer App</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod et autem officiis sunt, inventore doloremque? Nobis itaque facilis est qu</p>
@@ -76,7 +121,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="" alt="">
+                <img src="images/web1232*656.jpg" class="imag">
                 <div class="layer">
                     <h3>Website</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod et autem officiis sunt, inventore doloremque? Nobis itaque facilis est qu</p>
@@ -84,14 +129,23 @@
                 </div>
             </div>
             <div class="work">
-                <img src="" alt="">
+                <img src="images/wepsite1200*630.jpeg" class="imag">
                 <div class="layer">
                     <h3>Website</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod et autem officiis sunt, inventore doloremque? Nobis itaque facilis est qu</p>
                     <!-- <a href="#"><i class></i></a> -->
                 </div>
             </div>
-        </div>
+            
+            <div class="work">
+                <img src="images/desin900*507.webp" class="imag">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <!-- <a href="#"><i class></i></a> -->x
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod et autem officiis sunt, inventore doloremque? Nobis itaque facilis est qu</p>
+                
+            </div>
+        </div  class="btn-container">
         <a href="#" class="btn">See more</a>
     </div>
   </div>
@@ -100,13 +154,13 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact</h1>
-                <p>info@Naks.co.za</p>
-                <p>0606558122</p>
+                <h1 class="sub-title">Contact us</h1>
+                <p ><i class="fas fa-paper-plane"></i>info@ManakaTech.co.za</p>
+                <p><i class="fas fa-phone-square-alt"></i>0606558122 / 075558265</p>
                 <div class="social-icons">
-                    <a href=""><i class=""></i></a>
-                    <a href=""><i class=""></i></a>
-                    <a href=""><i class=""></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
             <div class="contact-right">
@@ -120,5 +174,18 @@
         </div>
     </div>
  </div>
+
+ <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+ </script>
 </body>
 </html>
