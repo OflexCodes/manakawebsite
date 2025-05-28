@@ -116,9 +116,17 @@ body{
     
 }
  /* .......about....... */
- #about{
-    background-color: rgb(37, 36, 36);
- }
+ #about {
+    background: linear-gradient(
+        to right,
+        rgba(43, 36, 36, 0) 20%,     /* Fully transparent at the top */
+        rgba(37, 35, 35,0.5) 65%,  /* Light fade start */
+        rgba(73, 69, 69, 0.8) 70%,  /* Deeper tone */
+        rgb(236, 234, 234) 100%    /* Fully dark at the bottom */
+    );
+    padding: 60px 10%;
+}
+
  .column-1 {
     display: flex;
     justify-content: space-between; 
@@ -157,7 +165,7 @@ body{
 }
 /*..................Team...................*/
 .wrapper {
-    padding: 40px;
+    padding: 10%;
     margin-left: 100px;
     /* background-color: #f8f8f8; */
     /* text-align: center; */
@@ -494,7 +502,10 @@ footer{
     border-radius: 9px;
     
 }
-
+img {
+    display: block;
+    max-width: 100%;
+  }
 
 
 
