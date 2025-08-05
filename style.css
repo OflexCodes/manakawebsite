@@ -115,54 +115,36 @@ body{
     background: rgb(117, 114, 114);
     
 }
- /* .......about....... */
- #about {
-    background: linear-gradient(
-        to right,
-        rgba(43, 36, 36, 0) 20%,     /* Fully transparent at the top */
-        rgba(37, 35, 35,0.5) 65%,  /* Light fade start */
-        rgba(73, 69, 69, 0.8) 70%,  /* Deeper tone */
-        rgb(236, 234, 234) 100%    /* Fully dark at the bottom */
-    );
-    padding: 60px 10%;
+ /* ..............about............... */
+#about {
+  color: #fff;
+  min-height: 100vh;                   /* Full height of the screen */
+  display: flex;                       /* Enables flexbox */
+  justify-content: center;            /* Horizontally center the content */
+  align-items: center;                /* Vertically center the content */
+  padding: 40px 20px;                 /* Add padding to prevent content from hugging the edges */
+  text-align: center;
 }
 
- .column-1 {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;  
-    gap: 90px;
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.col-1, .col-2 {
-    flex: 1;  
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #facc15;
 }
-.col-1{
-    color: #f2f2f2;
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
-.col-1 h1{
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-}
-.col-1 p{
-    font-size: 20px;
-    font-style: italic;
-}
-.cta{
-    color: #f2f2f2;
-    text-align: center;
-}
-.cta a{
-    color: #ffaf00;
-}
-.grouppic img {
-    width: 1000px;   
-    height: 800px;  
-    max-width: 800px;  
-    border-radius: 200px;
-}
+
+  
 /*..................Team...................*/
 .wrapper {
     padding: 10%;
